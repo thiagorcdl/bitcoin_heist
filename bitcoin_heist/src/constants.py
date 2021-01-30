@@ -19,6 +19,7 @@ TARGET_ATTR = "label"
 N_FOLD = 5
 N_CLUSTER = 29
 N_ROWS = None
+MAX_ITER = 2 ** 8
 
 ASSETS_PATH = "./assets"
 DATA_PATH = f"{ASSETS_PATH}/dataset/BitcoinHeistData.csv"
