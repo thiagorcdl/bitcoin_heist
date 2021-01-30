@@ -3,7 +3,7 @@ import logging
 
 LOGGING_LEVEL = logging.INFO
 DATASET_ATTRS = (
-    "address",
+    # "address",  ## Drop address
     "year",
     "day",
     "length",
@@ -17,9 +17,11 @@ DATASET_ATTRS = (
 DATASET_PREDICT_ATTRS_LEN = len(DATASET_ATTRS) - 1
 TARGET_ATTR = "label"
 N_FOLD = 5
+N_CLUSTER = 29
+N_ROWS = None
 
 ASSETS_PATH = "./assets"
-DATA_PATH = f"{ASSETS_PATH}/dataset/"
+DATA_PATH = f"{ASSETS_PATH}/dataset/BitcoinHeistData.csv"
 RESULTS_PATH = f"{ASSETS_PATH}/results"
 CHARTS_PATH = f"{RESULTS_PATH}/charts"
 

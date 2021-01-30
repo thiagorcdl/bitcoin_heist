@@ -12,7 +12,8 @@ It utilizes the _BitcoinHeistRansomwareAddress_ data set, available at the UCI M
 
 1. Clone repository
 1. Fetch dataset ([data.zip](https://archive.ics.uci.edu/ml/machine-learning-databases/00526/))
-1. Extract inside `{PROJECT_ROOT}/assets/dataset`
+1. Extract inside `{PROJECT_ROOT}/assets/dataset`so you have the following:
+   - `{PROJECT_ROOT}/assets/dataset/BitcoinHeistData.csv`
 1. Install requirements:
     - `pip install -r requirements.txt`
 1. Run `social_media_buzz` module:

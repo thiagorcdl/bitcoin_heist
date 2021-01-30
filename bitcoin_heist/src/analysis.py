@@ -5,17 +5,18 @@ results.
 """
 import logging
 
+from sklearn.cluster import KMeans
+
+from bitcoin_heist.src.constants import N_CLUSTER
+from bitcoin_heist.src.data import prepare_dataset, write_model
 
 logger = logging.getLogger(__name__)
 
 
-def generate_charts():
-    """Use rankings to generate chart for each fold."""
-    # TODO
-    return
-
-
 def main():
     """Run main logics for generating clusters."""
-    # TODO
-    return
+    training_data, testing_data = prepare_dataset()
+    model = KMeans(n_clusters=N_CLUSTER, max_iter=30)
+    logger.info(f"Training K-means with {N_CLUSTER} clusters.")
+    result = model.fit(training_data)
+    write_model(result)
