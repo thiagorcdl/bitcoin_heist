@@ -1,8 +1,4 @@
-"""Module for implementing the overall logics.
-
-This consists of extracting data, training model, using it and ranking the
-results.
-"""
+"""Module for implementing the overall logics of the data analysis."""
 import logging
 
 import pandas as pd
@@ -21,7 +17,10 @@ logger = logging.getLogger(__name__)
 def main():
     """Run main logics for generating clusters.
 
-    Remove label from training data so it's not used in K-Means.
+    Get dataset, remove label from training data so it's not used in K-Means,
+    generate the model with the same amount of clusters as there are labels,
+    use th emodel to predict each sample's cluster, and then create a
+    confusion matrix and evaluate the results (Rand Score).
     """
     training_data = prepare_dataset()
     pruned_training_data = training_data.drop(TARGET_ATTR, axis=1)

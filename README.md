@@ -6,7 +6,7 @@
 ### Bitcoin Blockchain Clustering Analysis for Ransomware Detection
 
 This code was developed as a study tool for the **Cluster Analysis, Association Mining, and Model Evaluation** course provided by the University of California Irvine on [Coursera](https://www.coursera.org/learn/cluster-analysis-association-mining-and-model-evaluation).
-It utilizes the _BitcoinHeistRansomwareAddress_ data set, available at the UCI Machine Learning Repository
+It utilizes the _BitcoinHeistRansomwareAddress_ data set, available at the UCI Machine Learning Repository.
 
 # Usage
 

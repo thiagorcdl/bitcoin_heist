@@ -1,7 +1,4 @@
-"""Module for implementing the data preparation.
-
-This involves dividing the known data set into Training and Testing subsets.
-"""
+"""Module for implementing the data preparation and output."""
 import csv
 import logging
 import re
@@ -64,7 +61,7 @@ def write_confusion_matrix(confusion_matrix):
     Ignore first 2 lines
     """
 
-    csv_headers = ["Labels\Predicted"] + list(range(N_CLUSTER))
+    csv_headers = [r"Labels\Predicted"] + list(range(N_CLUSTER))
     path = f"{RESULTS_PATH}/confusion_matrix.csv"
 
     with open(path, 'w', newline='') as csv_file:
