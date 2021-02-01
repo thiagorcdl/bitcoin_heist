@@ -19,7 +19,7 @@ def main():
 
     Get dataset, remove label from training data so it's not used in K-Means,
     generate the model with the same amount of clusters as there are labels,
-    use th emodel to predict each sample's cluster, and then create a
+    use the model to predict each sample's cluster, and then create a
     confusion matrix and evaluate the results (Rand Score).
     """
     training_data = prepare_dataset()
