@@ -2,6 +2,7 @@
 import logging
 
 LOGGING_LEVEL = logging.INFO
+BINARY_PARAM = "binary"
 DATASET_ATTRS = (
     # "address",  ## Drop address
     "year",
@@ -16,6 +17,9 @@ DATASET_ATTRS = (
 )
 DATASET_PREDICT_ATTRS_LEN = len(DATASET_ATTRS) - 1
 TARGET_ATTR = "label"
+SAFE_LABEL = "white"
+POSITIVE = "positive"
+NEGATIVE = "negative"
 N_FOLD = 5
 N_CLUSTER = 29
 N_ROWS = None

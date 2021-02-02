@@ -1,7 +1,7 @@
 ![preview](https://github.com/thiagorcdl/bitcoin_heist/blob/master/assets/social_media_preview.png)
 
 # Bitcoin Heist
-[![Released under the MIT license.](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/thiagorcdl/social_media_buzz/blob/master/LICENSE) [![This Repository uses a generated Social Preview from @pqt/social-preview](https://img.shields.io/badge/%E2%9C%93-Social%20Preview-blue)](https://github.com/pqt/social-preview)
+[![Released under the MIT license.](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/thiagorcdl/bitcoin_heist/blob/master/LICENSE) [![This Repository uses a generated Social Preview from @pqt/social-preview](https://img.shields.io/badge/%E2%9C%93-Social%20Preview-blue)](https://github.com/pqt/social-preview)
 
 ### Bitcoin Blockchain Clustering Analysis for Ransomware Detection
 
@@ -16,8 +16,9 @@ It utilizes the _BitcoinHeistRansomwareAddress_ data set, available at the [UCI 
    - `{PROJECT_ROOT}/assets/dataset/BitcoinHeistData.csv`
 1. Install requirements:
     - `pip install -r requirements.txt`
-1. Run `social_media_buzz` module:
+1. Run `bitcoin_heist` module for the regular (29 clusters) or for binary classification (2 clusters):
     - `python -m bitcoin_heist`
+    - `python -m bitcoin_heist binary`
 1. Check results under `/assets/results/`
 
 
